@@ -1,30 +1,22 @@
-let system, system2, system3;
+let particleSystem;
 
 function setup() {
   createCanvas(1000, 600);
-  system = new ParticleSystem(createVector(width / 2, 50));
-  system2 = new ParticleSystem(createVector(width/3, 100));
-  system3 = new ParticleSystem(createVector(width*2/3, 100));
-
-  
+  particleSystem = new ParticleSystem(createVector(width / 2, 50));
 }
 
 function draw() {
-  
   background(255);
-  
-  system.addParticle();
-  system.run();
-  
-  system2.addParticle();
-  system2.run();
-  
-  system3.addParticle();
-  system3.run();
-  
+  particleSystem.run();
   translate(width/2,height-20);
   branch(0);
-  noLoop();
+
+}
+
+function mousePressed(e) {
+  particleSystem.origin = createVector(mouseX, mouseY);
+  particleSystem.addParticle();
+  return false;
 }
 
 function branch(depth){ 
