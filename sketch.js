@@ -9,6 +9,7 @@ function draw() {
   background(255);
   
   particleSystem.run();
+  strokeWeight(10);
   translate(width/2,height-20);
   branch(0);
   
