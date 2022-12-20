@@ -9,7 +9,8 @@ class leaves extends Particle {
       stroke(255, this.lifespan);
       noStroke;
       push();
-      fill(85,107,47);
+      fill(52,67,27);
+      stroke(52,67,27);
       translate(this.position.x, this.position.y);
       let theta = map(this.position.x, 0, width, TWO_PI*-1, TWO_PI * 1);
       rotate(theta);
