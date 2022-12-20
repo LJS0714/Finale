@@ -18,7 +18,7 @@ class Particle {
   }
 
   display() {
-    stroke(200, this.lifespan);
+    stroke(0, this.lifespan);
     noStroke;
     fill(102,205,170, this.lifespan);
     ellipse(this.position.x, this.position.y, 12, 12);
