@@ -1,7 +1,7 @@
 let particleSystem;
 
 function setup() {
-  createCanvas(1000, 600);
+  createCanvas(1400, 600);
   particleSystem = new ParticleSystem(createVector(width / 2, 50));
 }
 
